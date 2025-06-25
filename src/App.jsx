@@ -12,11 +12,9 @@ import AboutUs from "./components/Aboutus";
 export default function App() {
   return (
       <Routes>
-        {/* Routes without sidebar */}
+        
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<Register />} />
-
-        {/* Routes with sidebar */}
         <Route element={<SidebarLayout />}>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/purchase" element={<PurchasePage />} />

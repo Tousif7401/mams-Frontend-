@@ -29,7 +29,7 @@ export const TransferForm = () => {
 
   const getBases = async () => {
     console.log("this is the base")
-    const res = await axios.get('http://localhost:5000/bases');
+    const res = await axios.get('https://mams-backend-ewub.onrender.com/bases');
     setBases(res.data);
     
   };
